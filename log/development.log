@@ -1,0 +1,659 @@
+Started GET "/" for 127.0.0.1 at 2024-10-15 23:19:00 +0300
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+activerecord (7.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:80:in `rescue in new_client'
+activerecord (7.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:68:in `new_client'
+activerecord (7.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:980:in `connect'
+activerecord (7.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:992:in `reconnect'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:685:in `block in reconnect!'
+activesupport (7.1.4) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:684:in `reconnect!'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:786:in `block in verify!'
+activesupport (7.1.4) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:777:in `verify!'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:794:in `connect!'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:1000:in `block in with_raw_connection'
+activesupport (7.1.4) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:999:in `with_raw_connection'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:1112:in `valid_raw_connection'
+activerecord (7.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:616:in `get_database_version'
+activerecord (7.1.4) lib/active_record/connection_adapters/schema_cache.rb:374:in `database_version'
+activerecord (7.1.4) lib/active_record/connection_adapters/schema_cache.rb:70:in `database_version'
+activerecord (7.1.4) lib/active_record/connection_adapters/schema_cache.rb:200:in `database_version'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:870:in `database_version'
+activerecord (7.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:644:in `check_version'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:680:in `new_connection'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:730:in `checkout_new_connection'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:709:in `try_to_checkout_new_connection'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:654:in `acquire_connection'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:353:in `checkout'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:182:in `connection'
+activerecord (7.1.4) lib/active_record/migration/pending_migration_connection.rb:8:in `establish_temporary_connection'
+activerecord (7.1.4) lib/active_record/migration.rb:774:in `block in pending_migrations'
+activerecord (7.1.4) lib/active_record/migration.rb:773:in `each'
+activerecord (7.1.4) lib/active_record/migration.rb:773:in `pending_migrations'
+activerecord (7.1.4) lib/active_record/migration.rb:752:in `check_pending_migrations'
+activerecord (7.1.4) lib/active_record/migration.rb:644:in `block (2 levels) in call'
+activesupport (7.1.4) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.1.4) lib/active_record/migration.rb:649:in `block in call'
+activerecord (7.1.4) lib/active_record/migration.rb:641:in `synchronize'
+activerecord (7.1.4) lib/active_record/migration.rb:641:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.4) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.4) lib/active_support/tagged_logging.rb:139:in `block in tagged'
+activesupport (7.1.4) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.4) lib/active_support/tagged_logging.rb:139:in `tagged'
+activesupport (7.1.4) lib/active_support/broadcast_logger.rb:241:in `method_missing'
+railties (7.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.4) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.4) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.4) lib/rails/engine.rb:536:in `call'
+puma (6.4.3) lib/puma/configuration.rb:272:in `call'
+puma (6.4.3) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.3) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.3) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.3) lib/puma/server.rb:464:in `process_client'
+puma (6.4.3) lib/puma/server.rb:245:in `block in run'
+puma (6.4.3) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2024-10-15 23:19:01 +0300
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+activerecord (7.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:80:in `rescue in new_client'
+activerecord (7.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:68:in `new_client'
+activerecord (7.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:980:in `connect'
+activerecord (7.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:992:in `reconnect'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:685:in `block in reconnect!'
+activesupport (7.1.4) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:684:in `reconnect!'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:786:in `block in verify!'
+activesupport (7.1.4) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:777:in `verify!'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:794:in `connect!'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:1000:in `block in with_raw_connection'
+activesupport (7.1.4) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:999:in `with_raw_connection'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:1112:in `valid_raw_connection'
+activerecord (7.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:616:in `get_database_version'
+activerecord (7.1.4) lib/active_record/connection_adapters/schema_cache.rb:374:in `database_version'
+activerecord (7.1.4) lib/active_record/connection_adapters/schema_cache.rb:70:in `database_version'
+activerecord (7.1.4) lib/active_record/connection_adapters/schema_cache.rb:200:in `database_version'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:870:in `database_version'
+activerecord (7.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:644:in `check_version'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:680:in `new_connection'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:730:in `checkout_new_connection'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:709:in `try_to_checkout_new_connection'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:654:in `acquire_connection'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:353:in `checkout'
+activerecord (7.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:182:in `connection'
+activerecord (7.1.4) lib/active_record/migration/pending_migration_connection.rb:8:in `establish_temporary_connection'
+activerecord (7.1.4) lib/active_record/migration.rb:774:in `block in pending_migrations'
+activerecord (7.1.4) lib/active_record/migration.rb:773:in `each'
+activerecord (7.1.4) lib/active_record/migration.rb:773:in `pending_migrations'
+activerecord (7.1.4) lib/active_record/migration.rb:752:in `check_pending_migrations'
+activerecord (7.1.4) lib/active_record/migration.rb:644:in `block (2 levels) in call'
+activesupport (7.1.4) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.1.4) lib/active_record/migration.rb:649:in `block in call'
+activerecord (7.1.4) lib/active_record/migration.rb:641:in `synchronize'
+activerecord (7.1.4) lib/active_record/migration.rb:641:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.4) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.4) lib/active_support/tagged_logging.rb:139:in `block in tagged'
+activesupport (7.1.4) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.4) lib/active_support/tagged_logging.rb:139:in `tagged'
+activesupport (7.1.4) lib/active_support/broadcast_logger.rb:241:in `method_missing'
+railties (7.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.4) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.4) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.4) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.4) lib/rails/engine.rb:536:in `call'
+puma (6.4.3) lib/puma/configuration.rb:272:in `call'
+puma (6.4.3) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.3) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.3) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.3) lib/puma/server.rb:464:in `process_client'
+puma (6.4.3) lib/puma/server.rb:245:in `block in run'
+puma (6.4.3) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE DATABASE "flashmasters_backend" ENCODING = 'unicode'[0m
+  [1m[35m (315.1ms)[0m  [1m[35mCREATE DATABASE "flashmaster_backend_test" ENCODING = 'unicode'[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2802952624434628575)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (1.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2024-10-16 07:17:11.032562', '2024-10-16 07:17:11.032566') RETURNING "key"[0m
+Migrating to CreateRoles (20241016060050)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "roles" ("id" bigserial primary key, "neme" character varying, "key" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241016060050') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(2802952624434628575)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (11.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2802952624434628575)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (13.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2024-10-16 07:31:51.507437', '2024-10-16 07:31:51.507440') RETURNING "key"[0m
+Migrating to CreateRoles (20241016060050)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.1ms)[0m  [1m[35mCREATE TABLE "roles" ("id" bigserial primary key, "neme" character varying, "key" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241016060050') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(2802952624434628575)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2802952624434628575)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(2802952624434628575)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:10:37 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#home as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 261)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2024-10-17 23:10:37 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2024-10-17 23:11:28 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 127)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for ::1 at 2024-10-17 23:11:37 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2130)
+
+
+  
+NameError (undefined local variable or method `env' for #<StaticController:0x0000000000eb78>
+Did you mean?  end
+               END):
+  
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for ::1 at 2024-10-17 23:11:40 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 112)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for ::1 at 2024-10-17 23:12:53 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for ::1 at 2024-10-17 23:12:54 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for ::1 at 2024-10-17 23:13:20 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for ::1 at 2024-10-17 23:13:20 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:13:23 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:15:27 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 112)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:15:28 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:16:07 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 162)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:17:54 +0300
+  
+LoadError (cannot load such file -- dotenv):
+  
+app/controllers/static_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:17:57 +0300
+  
+LoadError (cannot load such file -- dotenv):
+  
+app/controllers/static_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:18:34 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 112)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:18:37 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:19:01 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:19:20 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:19:26 +0300
+  
+LoadError (cannot load such file -- dotenv):
+  
+app/controllers/static_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:19:27 +0300
+  
+LoadError (cannot load such file -- dotenv):
+  
+app/controllers/static_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:21:07 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 112)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:21:08 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:21:25 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1944)
+
+
+  
+NoMethodError (undefined method `env' for #<StaticController:0x000000000186a0>
+Did you mean?  end):
+  
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:21:50 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 112)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:21:51 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:22:31 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:22:32 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:22:32 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:22:32 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:22:52 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:23:12 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:23:53 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:26:37 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#home as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 265)
+
+
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:26:38 +0300
+Processing by StaticController#home as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 53)
+
+
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:27:28 +0300
+Processing by StaticController#home as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 53)
+
+
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:27:29 +0300
+Processing by StaticController#home as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 53)
+
+
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:31:32 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 128)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:31:46 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 94)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:31:57 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 162)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:31:59 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 94)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:32:00 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:32:01 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:32:01 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:32:01 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:32:01 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:32:22 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 85)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:32:42 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 162)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/static_controller.rb:3:in `+'
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:33:21 +0300
+Processing by StaticController#home as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 223)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2802952624434628575)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to CreateUsers (20241017203516)
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (32.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying, "password_digest" character varying, "key" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241017203516') RETURNING "version"[0m
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(2802952624434628575)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:47:01 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#home as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 265)
+
+
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (16.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "key", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Luca Codorean"], ["email", "codoreanluca@gmail.com"], ["password_digest", "[FILTERED]"], ["key", nil], ["created_at", "2024-10-17 20:48:06.905939"], ["updated_at", "2024-10-17 20:48:06.905939"]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:48:15 +0300
+Processing by StaticController#home as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 53)
+
+
+Started GET "/" for 127.0.0.1 at 2024-10-17 23:54:52 +0300
+Processing by StaticController#home as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 141)
+
+
+Started GET "/" for ::1 at 2024-10-18 00:01:54 +0300
+Processing by StaticController#home as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 146)
+
+
