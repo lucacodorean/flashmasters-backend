@@ -657,3 +657,13 @@ Processing by StaticController#home as */*
 Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 146)
 
 
+Started GET "/" for 127.0.0.1 at 2024-10-18 00:07:36 +0300
+Processing by StaticController#home as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 53)
+
+
+Started GET "/" for 127.0.0.1 at 2024-10-18 00:07:37 +0300
+Processing by StaticController#home as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 53)
+
+
