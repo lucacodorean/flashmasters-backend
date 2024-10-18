@@ -667,3 +667,892 @@ Processing by StaticController#home as HTML
 Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 53)
 
 
+Started GET "/" for ::1 at 2024-10-18 13:20:17 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#home as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 265)
+
+
+Started GET "/favicon.ico" for ::1 at 2024-10-18 13:20:17 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2024-10-18 13:25:36 +0300
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/static_controller.rb:1:in `<main>'
+Started POST "/sessions" for ::1 at 2024-10-18 13:28:21 +0300
+  
+ActionController::RoutingError (uninitialized constant SessionsController
+Did you mean?  SessionController):
+  
+Started POST "/sessions" for ::1 at 2024-10-18 13:28:48 +0300
+  
+ActionController::RoutingError (uninitialized constant SessionsController
+Did you mean?  SessionController):
+  
+Started POST "/sessions" for ::1 at 2024-10-18 13:28:57 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/sessions"):
+  
+Started POST "/session" for ::1 at 2024-10-18 13:29:02 +0300
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/session_controller.rb:1:in `<main>'
+Started POST "/session" for ::1 at 2024-10-18 13:31:57 +0300
+Processing by SessionController#create as */*
+  Parameters: {"email"=>"codoreanluca@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms | Allocations: 13574)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/session_controller.rb:3:in `create'
+Started POST "/session" for ::1 at 2024-10-18 13:32:13 +0300
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/session_controller.rb:1:in `<main>'
+Started POST "/session" for ::1 at 2024-10-18 13:32:43 +0300
+Processing by SessionController#create as */*
+  Parameters: {"email"=>"codoreanluca@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1393)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/session_controller.rb:3:in `create'
+Started POST "/session" for ::1 at 2024-10-18 13:34:56 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/session"):
+  
+Started POST "/sessions" for ::1 at 2024-10-18 13:35:01 +0300
+  
+ActionController::RoutingError (uninitialized constant SessionsController
+Did you mean?  SessionController):
+  
+Started POST "/sessions" for ::1 at 2024-10-18 13:35:12 +0300
+  
+ActionController::RoutingError (uninitialized constant SessionsController
+Did you mean?  SessionController):
+  
+Started POST "/sessions" for ::1 at 2024-10-18 13:35:37 +0300
+  
+ActionController::RoutingError (uninitialized constant SessionsController
+Did you mean?  SessionController):
+  
+Started POST "/sessions" for ::1 at 2024-10-18 13:36:04 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/sessions"):
+  
+Started POST "/session" for ::1 at 2024-10-18 13:36:08 +0300
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/session_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-10-18 13:36:22 +0300
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/static_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-10-18 13:36:24 +0300
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/static_controller.rb:1:in `<main>'
+Started POST "/session" for ::1 at 2024-10-18 13:38:14 +0300
+Processing by SessionController#create as */*
+  Parameters: {"email"=>"codoreanluca@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1396)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/session_controller.rb:3:in `create'
+Started POST "/session" for ::1 at 2024-10-18 13:38:29 +0300
+Processing by SessionController#create as */*
+  Parameters: {"email"=>"codoreanluca@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1353)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/session_controller.rb:3:in `create'
+Started POST "/session" for ::1 at 2024-10-18 13:38:36 +0300
+Processing by SessionController#create as */*
+  Parameters: {"email"=>"codoreanluca@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 517)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/session_controller.rb:3:in `create'
+Started GET "/controllers/session_controller.rb:3:in" for ::1 at 2024-10-18 13:39:24 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/controllers/session_controller.rb:3:in"):
+  
+Started POST "/session" for ::1 at 2024-10-18 13:39:29 +0300
+Processing by SessionController#create as */*
+  Parameters: {"email"=>"codoreanluca@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 9880)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/session_controller.rb:3:in `create'
+Started GET "/" for ::1 at 2024-10-18 13:40:02 +0300
+Processing by StaticController#home as HTML
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 210)
+
+
+Started POST "/session" for ::1 at 2024-10-18 13:40:22 +0300
+Processing by SessionController#create as */*
+  Parameters: {"user"=>"  {", "email"=>"codoreanluca@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "}"=>""}
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:3:in `create'
+Completed 200 OK in 82ms (Views: 0.3ms | ActiveRecord: 43.9ms | Allocations: 9163)
+
+
+Started POST "/session" for ::1 at 2024-10-18 13:42:23 +0300
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/session_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-10-18 13:45:16 +0300
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/static_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-10-18 13:45:21 +0300
+Processing by StaticController#home as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 140)
+
+
+Started GET "/" for ::1 at 2024-10-18 13:45:35 +0300
+Processing by StaticController#home as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 140)
+
+
+Started POST "/session" for ::1 at 2024-10-18 13:45:40 +0300
+Processing by SessionController#create as */*
+  Parameters: {"user"=>"  {", "email"=>"codoreanluca@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>" Luca Test", "}"=>""}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:3:in `create'
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 3.6ms | Allocations: 2473)
+
+
+Started POST "/session" for ::1 at 2024-10-18 13:47:12 +0300
+Processing by SessionController#create as */*
+  Parameters: {"user"=>"  {", "email"=>"codoreanluca@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>" Luca Test", "}"=>""}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:3:in `create'
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 3.7ms | Allocations: 2443)
+
+
+Started POST "/session" for ::1 at 2024-10-18 13:47:47 +0300
+Processing by SessionController#create as */*
+  Parameters: {"user"=>"  {", "email"=>"codoreanluca@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>" Luca Test", "}"=>""}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:3:in `create'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 3.0ms | Allocations: 2454)
+
+
+  [1m[36mUser Count (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+Started GET "/" for 127.0.0.1 at 2024-10-18 18:08:04 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#home as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 265)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2024-10-18 18:08:04 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/auth" for 127.0.0.1 at 2024-10-18 18:08:32 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/auth"):
+  
+Started POST "/session" for ::1 at 2024-10-18 18:08:59 +0300
+Processing by SessionController#create as */*
+  Parameters: {"user"=>"  {", "email"=>"codoreanluca@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>" Luca Test", "}"=>""}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:3:in `create'
+Completed 200 OK in 68ms (Views: 0.2ms | ActiveRecord: 24.0ms | Allocations: 17213)
+
+
+Started POST "/auth" for ::1 at 2024-10-18 18:09:13 +0300
+  
+SyntaxError (/root/flashmaster-backend/app/controllers/auth_controller.rb:6: syntax error, unexpected ':', expecting '}'
+...          render json { status: 403 }
+...                              ^
+):
+  
+app/controllers/auth_controller.rb:6: syntax error, unexpected ':', expecting '}'
+Started POST "/auth" for ::1 at 2024-10-18 18:09:52 +0300
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/auth_controller.rb:2:in `<class:AuthController>'
+app/controllers/auth_controller.rb:1:in `<main>'
+Started POST "/auth" for ::1 at 2024-10-18 18:10:09 +0300
+Processing by AuthController#create as */*
+  Parameters: {"user"=>"  {", "email"=>"codoreanluca@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>" Luca Test", "}"=>""}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 4281)
+
+
+  
+NoMethodError (undefined method `findby' for User:Class
+Did you mean?  find_by
+               find_by!
+               find):
+  
+app/controllers/auth_controller.rb:3:in `create'
+Started POST "/auth" for ::1 at 2024-10-18 18:10:19 +0300
+Processing by AuthController#create as */*
+  Parameters: {"user"=>"  {", "email"=>"codoreanluca@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>" Luca Test", "}"=>""}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 5.2ms | Allocations: 20954)
+
+
+  
+ActionDispatch::Request::Session::DisabledSessionError (Your application has sessions disabled. To write to the session you must first configure a session store):
+  
+app/controllers/auth_controller.rb:16:in `create'
+Started POST "/auth" for ::1 at 2024-10-18 18:10:34 +0300
+Processing by AuthController#create as */*
+  Parameters: {"user"=>"  {", "email"=>"codoreanluca@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>" Luca Test", "}"=>""}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+Completed 422 Unprocessable Content in 16ms (ActiveRecord: 5.0ms | Allocations: 6592)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Password can't be blank, Email can't be blank):
+  
+app/controllers/auth_controller.rb:8:in `create'
+Started POST "/auth" for ::1 at 2024-10-18 18:11:10 +0300
+Processing by AuthController#create as */*
+  Parameters: {"email"=>"codoreanluca@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Luca Test"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreanluca@icloud.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mUser Create (13.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "key", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Luca Test"], ["email", "codoreanluca@icloud.com"], ["password_digest", "[FILTERED]"], ["key", nil], ["created_at", "2024-10-18 15:11:10.796289"], ["updated_at", "2024-10-18 15:11:10.796289"]]
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+Completed 500 Internal Server Error in 266ms (ActiveRecord: 20.9ms | Allocations: 7955)
+
+
+  
+ActionDispatch::Request::Session::DisabledSessionError (Your application has sessions disabled. To write to the session you must first configure a session store):
+  
+app/controllers/auth_controller.rb:16:in `create'
+Started POST "/auth" for ::1 at 2024-10-18 18:13:13 +0300
+Processing by AuthController#create as */*
+  Parameters: {"email"=>"codoreanluca@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Luca Test"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreanluca@icloud.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 658)
+
+
+Started POST "/auth" for ::1 at 2024-10-18 18:14:01 +0300
+Processing by AuthController#create as */*
+  Parameters: {"email"=>"codoreanluca@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Luca Test"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreanluca@icloud.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 571)
+
+
+Started POST "/auth" for ::1 at 2024-10-18 18:14:42 +0300
+Processing by AuthController#create as */*
+  Parameters: {"email"=>"codoreanluca@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Luca Test"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreanluca@icloud.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 5.9ms | Allocations: 5318)
+
+
+Started POST "/auth" for ::1 at 2024-10-18 18:14:47 +0300
+Processing by AuthController#create as */*
+  Parameters: {"email"=>"codoreanluca@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Luca Test"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreanluca@icloud.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mUser Create (2.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "key", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Luca Test"], ["email", "codoreanluca@icloud.com"], ["password_digest", "[FILTERED]"], ["key", nil], ["created_at", "2024-10-18 15:14:47.950391"], ["updated_at", "2024-10-18 15:14:47.950391"]]
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (13.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+Completed 500 Internal Server Error in 289ms (ActiveRecord: 21.8ms | Allocations: 7444)
+
+
+  
+ActionDispatch::Request::Session::DisabledSessionError (Your application has sessions disabled. To write to the session you must first configure a session store):
+  
+app/controllers/auth_controller.rb:16:in `create'
+Started POST "/auth" for ::1 at 2024-10-18 18:17:36 +0300
+Processing by AuthController#create as */*
+  Parameters: {"email"=>"codoreanluca@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Luca Test"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreanluca@icloud.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "key", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Luca Test"], ["email", "codoreanluca@icloud.com"], ["password_digest", "[FILTERED]"], ["key", nil], ["created_at", "2024-10-18 15:17:36.866672"], ["updated_at", "2024-10-18 15:17:36.866672"]]
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (12.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+Completed 500 Internal Server Error in 260ms (ActiveRecord: 21.1ms | Allocations: 7433)
+
+
+  
+ActionDispatch::Request::Session::DisabledSessionError (Your application has sessions disabled. To write to the session you must first configure a session store):
+  
+app/controllers/auth_controller.rb:16:in `create'
+Started GET "/" for 127.0.0.1 at 2024-10-18 18:18:54 +0300
+Processing by StaticController#home as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 140)
+
+
+Started GET "/" for ::1 at 2024-10-18 18:57:26 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#home as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 265)
+
+
+Started GET "/favicon.ico" for ::1 at 2024-10-18 18:57:26 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2024-10-18 19:03:33 +0300
+  
+NoMethodError (undefined method `protect_from_forgery' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:3:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/static_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-10-18 19:04:28 +0300
+Processing by StaticController#home as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 649)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/static_controller.rb:3:in `home'
+Started GET "/" for ::1 at 2024-10-18 19:05:15 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#home as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 353)
+
+
+Started POST "/auth" for ::1 at 2024-10-18 19:07:14 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreanluca@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Luca Test"}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreanluca@icloud.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mUser Create (15.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "key", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Luca Test"], ["email", "codoreanluca@icloud.com"], ["password_digest", "[FILTERED]"], ["key", nil], ["created_at", "2024-10-18 16:07:14.443162"], ["updated_at", "2024-10-18 16:07:14.443162"]]
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+Completed 200 OK in 415ms (Views: 0.6ms | ActiveRecord: 70.7ms | Allocations: 41258)
+
+
+Started POST "/auth" for ::1 at 2024-10-18 19:29:08 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreandorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 658)
+
+
+  
+NameError (uninitialized constant ApplicationRecord::HasKey):
+  
+app/models/application_record.rb:2:in `<class:ApplicationRecord>'
+app/models/application_record.rb:1:in `<main>'
+app/models/user.rb:1:in `<main>'
+app/controllers/auth_controller.rb:3:in `create'
+Started POST "/auth" for ::1 at 2024-10-18 19:29:34 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreandorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 633)
+
+
+  
+NameError (uninitialized constant ApplicationRecord::HasKey):
+  
+app/models/application_record.rb:2:in `<class:ApplicationRecord>'
+app/models/application_record.rb:1:in `<main>'
+app/models/user.rb:1:in `<main>'
+app/controllers/auth_controller.rb:3:in `create'
+Started POST "/auth" for ::1 at 2024-10-18 19:31:10 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreandorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 4851)
+
+
+  
+NoMethodError (undefined method `before_creation' for ApplicationRecord:Class
+Did you mean?  before_create):
+  
+app/models/concerns/has_key.rb:5:in `block in <module:HasKey>'
+app/models/application_record.rb:2:in `include'
+app/models/application_record.rb:2:in `<class:ApplicationRecord>'
+app/models/application_record.rb:1:in `<main>'
+app/models/user.rb:1:in `<main>'
+app/controllers/auth_controller.rb:3:in `create'
+Started POST "/auth" for ::1 at 2024-10-18 19:31:21 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreandorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 10.3ms | Allocations: 4424)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "application_records" does not exist
+LINE 10:  WHERE a.attrelid = '"application_records"'::regclass
+                             ^
+):
+  
+Started POST "/auth" for ::1 at 2024-10-18 19:32:39 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreandorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1877)
+
+
+  
+NameError (uninitialized constant ApplicationRecordAPI
+Did you mean?  ApplicationRecordApi):
+  
+app/models/user.rb:1:in `<main>'
+app/controllers/auth_controller.rb:3:in `create'
+Started POST "/auth" for ::1 at 2024-10-18 19:33:05 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreandorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.0ms | Allocations: 1781)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "application_records" does not exist
+LINE 10:  WHERE a.attrelid = '"application_records"'::regclass
+                             ^
+):
+  
+Started POST "/auth" for ::1 at 2024-10-18 19:33:28 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreandorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 983)
+
+
+  
+ArgumentError (The `primary_abstract_class` is already set to ApplicationRecord(abstract). There can only be one `primary_abstract_class` in an application.):
+  
+app/models/application_record_api.rb:3:in `<class:ApplicationRecordApi>'
+app/models/application_record_api.rb:1:in `<main>'
+app/models/user.rb:1:in `<main>'
+app/controllers/auth_controller.rb:3:in `create'
+Started POST "/auth" for ::1 at 2024-10-18 19:33:36 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreandorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.2ms | Allocations: 1767)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "application_records" does not exist
+LINE 10:  WHERE a.attrelid = '"application_records"'::regclass
+                             ^
+):
+  
+Started POST "/auth" for ::1 at 2024-10-18 19:34:44 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreandorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreandorin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+Completed 500 Internal Server Error in 258ms (ActiveRecord: 7.5ms | Allocations: 7411)
+
+
+  
+NoMethodError (undefined method `alphanumberic' for SecureRandom:Module
+Did you mean?  alphanumeric):
+  
+app/models/concerns/has_key.rb:9:in `generate_random_key'
+app/controllers/auth_controller.rb:8:in `create'
+Started POST "/auth" for ::1 at 2024-10-18 19:35:00 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreandorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreandorin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mUser Create (3.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "key", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Dorin Codorean"], ["email", "codoreandorin@gmail.com"], ["password_digest", "[FILTERED]"], ["key", "USE_34lEhDDpgoN2ZQszHAhf"], ["created_at", "2024-10-18 16:35:01.189969"], ["updated_at", "2024-10-18 16:35:01.189969"]]
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+Completed 200 OK in 293ms (Views: 0.6ms | ActiveRecord: 12.1ms | Allocations: 11499)
+
+
+Started POST "/auth" for ::1 at 2024-10-18 19:36:00 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreanluca@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Luca Codorean"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreanluca@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "key", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Luca Codorean"], ["email", "codoreanluca@gmail.com"], ["password_digest", "[FILTERED]"], ["key", "use_PLtGCs6K77feMJfxxwUl"], ["created_at", "2024-10-18 16:36:00.670726"], ["updated_at", "2024-10-18 16:36:00.670726"]]
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (12.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+Completed 200 OK in 289ms (Views: 0.3ms | ActiveRecord: 20.2ms | Allocations: 8350)
+
+
+Started POST "/auth" for ::1 at 2024-10-18 19:48:02 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreadorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreadorin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mUser Create (3.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "key", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Dorin Codorean"], ["email", "codoreadorin@gmail.com"], ["password_digest", "[FILTERED]"], ["key", "use_jTmw9t4jmBNIONHi0R5k"], ["created_at", "2024-10-18 16:48:02.981027"], ["updated_at", "2024-10-18 16:48:02.981027"]]
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+Completed 500 Internal Server Error in 300ms (ActiveRecord: 14.9ms | Allocations: 12876)
+
+
+  
+NoMethodError (undefined method `UserResource' for #<AuthController:0x0000000002e9a0>):
+  
+app/controllers/auth_controller.rb:19:in `create'
+Started POST "/auth" for ::1 at 2024-10-18 19:48:43 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreadorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreadorin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mUser Create (3.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "key", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Dorin Codorean"], ["email", "codoreadorin@gmail.com"], ["password_digest", "[FILTERED]"], ["key", "use_om1StRmw5l8ZCowrIg3C"], ["created_at", "2024-10-18 16:48:43.537921"], ["updated_at", "2024-10-18 16:48:43.537921"]]
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+Completed 500 Internal Server Error in 283ms (ActiveRecord: 14.4ms | Allocations: 10066)
+
+
+  
+NameError (uninitialized constant AuthController::UserResource):
+  
+app/controllers/auth_controller.rb:19:in `create'
+Started POST "/auth" for ::1 at 2024-10-18 19:51:32 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreadorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreadorin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mUser Create (3.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "key", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Dorin Codorean"], ["email", "codoreadorin@gmail.com"], ["password_digest", "[FILTERED]"], ["key", "use_GptX4IUsdlzfQVnojhp6"], ["created_at", "2024-10-18 16:51:32.628253"], ["updated_at", "2024-10-18 16:51:32.628253"]]
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+Completed 500 Internal Server Error in 282ms (ActiveRecord: 12.7ms | Allocations: 10058)
+
+
+  
+NameError (uninitialized constant AuthController::UserResource):
+  
+app/controllers/auth_controller.rb:17:in `create'
+Started POST "/auth" for ::1 at 2024-10-18 19:52:03 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreadorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreadorin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mUser Create (2.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "key", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Dorin Codorean"], ["email", "codoreadorin@gmail.com"], ["password_digest", "[FILTERED]"], ["key", "use_I7qqzZgbUY1oipmH8P1u"], ["created_at", "2024-10-18 16:52:03.721296"], ["updated_at", "2024-10-18 16:52:03.721296"]]
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+Completed 500 Internal Server Error in 285ms (ActiveRecord: 11.4ms | Allocations: 10017)
+
+
+  
+NameError (uninitialized constant AuthController::UserResource):
+  
+app/controllers/auth_controller.rb:17:in `create'
+Started POST "/auth" for ::1 at 2024-10-18 19:54:28 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreadorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreadorin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 6.0ms | Allocations: 5896)
+
+
+Started POST "/auth" for ::1 at 2024-10-18 19:54:43 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreadorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreadorin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mUser Create (2.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "key", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Dorin Codorean"], ["email", "codoreadorin@gmail.com"], ["password_digest", "[FILTERED]"], ["key", "use_mETNng8aClVlurhpESvL"], ["created_at", "2024-10-18 16:54:43.803720"], ["updated_at", "2024-10-18 16:54:43.803720"]]
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (13.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+Completed 500 Internal Server Error in 259ms (ActiveRecord: 17.0ms | Allocations: 4880)
+
+
+  
+NameError (uninitialized constant AuthController::UserResource):
+  
+app/controllers/auth_controller.rb:16:in `create'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+Started POST "/auth" for ::1 at 2024-10-18 19:59:37 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreadorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreadorin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "key", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Dorin Codorean"], ["email", "codoreadorin@gmail.com"], ["password_digest", "[FILTERED]"], ["key", "use_QIu09stanW9JwZpnNYdF"], ["created_at", "2024-10-18 16:59:38.057201"], ["updated_at", "2024-10-18 16:59:38.057201"]]
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (13.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+Completed 500 Internal Server Error in 264ms (ActiveRecord: 21.3ms | Allocations: 10015)
+
+
+  
+NameError (uninitialized constant AuthController::UserResource):
+  
+app/controllers/auth_controller.rb:16:in `create'
+Started POST "/auth" for ::1 at 2024-10-18 20:02:16 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreadorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreadorin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 5.9ms | Allocations: 5833)
+
+
+Started POST "/auth" for ::1 at 2024-10-18 20:02:33 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreadorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreadorin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mUser Create (2.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "key", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Dorin Codorean"], ["email", "codoreadorin@gmail.com"], ["password_digest", "[FILTERED]"], ["key", "use_6yaWNtWnYg1o9a8m8bJs"], ["created_at", "2024-10-18 17:02:33.935418"], ["updated_at", "2024-10-18 17:02:33.935418"]]
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+Completed 500 Internal Server Error in 260ms (ActiveRecord: 5.5ms | Allocations: 4876)
+
+
+  
+NameError (uninitialized constant AuthController::UserResource):
+  
+app/controllers/auth_controller.rb:16:in `create'
+Started POST "/auth" for ::1 at 2024-10-18 20:03:02 +0300
+  
+NameError (uninitialized constant ApplicationController::UserResource):
+  
+app/controllers/application_controller.rb:4:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/auth_controller.rb:1:in `<main>'
+Started POST "/auth" for ::1 at 2024-10-18 20:03:10 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreadorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreadorin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 5.9ms | Allocations: 5895)
+
+
+Started POST "/auth" for ::1 at 2024-10-18 20:25:05 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreadorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreadorin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mUser Create (3.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "key", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Dorin Codorean"], ["email", "codoreadorin@gmail.com"], ["password_digest", "[FILTERED]"], ["key", "use_OdmZ59c9d2NwXalsZQmP"], ["created_at", "2024-10-18 17:25:06.032496"], ["updated_at", "2024-10-18 17:25:06.032496"]]
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (13.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+Completed 500 Internal Server Error in 297ms (ActiveRecord: 26.0ms | Allocations: 12649)
+
+
+  
+NameError (uninitialized constant AuthController::UserResource):
+  
+app/controllers/auth_controller.rb:16:in `create'
+Started POST "/auth" for ::1 at 2024-10-18 20:25:26 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreadorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreadorin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mUser Create (2.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "key", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Dorin Codorean"], ["email", "codoreadorin@gmail.com"], ["password_digest", "[FILTERED]"], ["key", "use_rySYhdthalnOc93KXQU1"], ["created_at", "2024-10-18 17:25:27.037222"], ["updated_at", "2024-10-18 17:25:27.037222"]]
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (24.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+Completed 500 Internal Server Error in 389ms (ActiveRecord: 42.8ms | Allocations: 41600)
+
+
+  
+NoMethodError (undefined method `key' for nil:NilClass):
+  
+app/resources/user_resource.rb:8:in `as_json'
+app/controllers/auth_controller.rb:16:in `create'
+Started POST "/auth" for ::1 at 2024-10-18 20:26:06 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreadorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreadorin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+Completed 200 OK in 18ms (Views: 0.3ms | ActiveRecord: 4.8ms | Allocations: 5938)
+
+
+Started POST "/auth" for ::1 at 2024-10-18 20:26:14 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreadorin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Dorin Codorean"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreadorin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mUser Create (3.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "key", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Dorin Codorean"], ["email", "codoreadorin@gmail.com"], ["password_digest", "[FILTERED]"], ["key", "use_v9YUNhdCL6fiH7piQG4n"], ["created_at", "2024-10-18 17:26:14.463414"], ["updated_at", "2024-10-18 17:26:14.463414"]]
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (12.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:16:in `create'
+Completed 200 OK in 275ms (Views: 0.2ms | ActiveRecord: 18.1ms | Allocations: 4173)
+
+
+Started GET "/" for ::1 at 2024-10-18 20:27:19 +0300
+Processing by StaticController#home as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 222)
+
+
+Started POST "/auth" for ::1 at 2024-10-18 20:28:20 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreadorin@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Luca Test"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreadorin@icloud.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mUser Create (2.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "key", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Luca Test"], ["email", "codoreadorin@icloud.com"], ["password_digest", "[FILTERED]"], ["key", "use_XVlbcqNCzTXZLuPDUSEq"], ["created_at", "2024-10-18 17:28:20.569827"], ["updated_at", "2024-10-18 17:28:20.569827"]]
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (12.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+Completed 500 Internal Server Error in 347ms (ActiveRecord: 32.1ms | Allocations: 41626)
+
+
+  
+NoMethodError (undefined method `key' for nil:NilClass):
+  
+app/resources/user_resource.rb:8:in `as_json'
+app/controllers/auth_controller.rb:16:in `create'
+Started POST "/auth" for ::1 at 2024-10-18 20:29:09 +0300
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"codoreadorin@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Luca Test"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreadorin@icloud.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mUser Create (2.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "key", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Luca Test"], ["email", "codoreadorin@icloud.com"], ["password_digest", "[FILTERED]"], ["key", "use_HnzivkpjpbmdNV7EnT2R"], ["created_at", "2024-10-18 17:29:10.162965"], ["updated_at", "2024-10-18 17:29:10.162965"]]
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (12.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth_controller.rb:8:in `create'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:16:in `create'
+Completed 200 OK in 313ms (Views: 0.3ms | ActiveRecord: 22.8ms | Allocations: 9475)
+
+
+Started POST "/login" for ::1 at 2024-10-18 20:41:09 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/login"):
+  
+Started POST "/login" for ::1 at 2024-10-18 20:41:28 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/login"):
+  
+Started GET "/" for ::1 at 2024-10-18 20:48:51 +0300
+Processing by StaticController#home as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 334)
+
+
+Started POST "/login" for ::1 at 2024-10-18 20:51:59 +0300
+Processing by AuthController#login as JSON
+  Parameters: {"email"=>"codoreadorin@icloud.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreadorin@icloud.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:24:in `login'
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 18.6ms | Allocations: 37904)
+
+
+  
+NameError (undefined local variable or method `user' for #<AuthController:0x0000000000f118>
+Did you mean?  @user):
+  
+app/controllers/auth_controller.rb:26:in `login'
+Started POST "/login" for ::1 at 2024-10-18 20:53:15 +0300
+Processing by AuthController#login as JSON
+  Parameters: {"email"=>"codoreadorin@icloud.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "codoreadorin@icloud.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:24:in `login'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:32:in `login'
+Completed 200 OK in 291ms (Views: 0.6ms | ActiveRecord: 5.6ms | Allocations: 9573)
+
+
+Started POST "/logout" for ::1 at 2024-10-18 20:53:30 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/logout"):
+  
+Started POST "/logout" for ::1 at 2024-10-18 20:53:48 +0300
+Processing by AuthController#logout as JSON
+  Parameters: {"email"=>"codoreadorin@icloud.com", "password"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 430)
+
+
+Started POST "/logout" for ::1 at 2024-10-18 20:53:51 +0300
+Processing by AuthController#logout as JSON
+  Parameters: {"email"=>"codoreadorin@icloud.com", "password"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 264)
+
+
+Started POST "/logout" for ::1 at 2024-10-18 20:54:24 +0300
+Processing by AuthController#logout as JSON
+  Parameters: {"email"=>"codoreadorin@icloud.com", "password"=>"[FILTERED]"}
+Completed 403 Forbidden in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 417)
+
+
+Started GET "/" for ::1 at 2024-10-18 20:58:11 +0300
+Processing by StaticController#home as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 181)
+
+

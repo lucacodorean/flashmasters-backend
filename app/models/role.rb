@@ -1,2 +1,2 @@
-class Role < ApplicationRecord
+class Role < ApplicationRecordApi
 end
