@@ -1,5 +1,7 @@
 .env
 .idea
+.idea/codeStyles
+.idea/inspectionProfiles
 config/database.yml
 tmp
 log
