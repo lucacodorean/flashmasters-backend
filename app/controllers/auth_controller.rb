@@ -29,7 +29,8 @@ class AuthController < ApplicationController
         end
 
         user.authenticate(params[:password])
-        render json: UserResource.new(User.find(session[:user_id])).as_json, status: 200
+        session[:user_id] = user.id
+        render json: UserResource.new(user).as_json, status: 200
     end
 
     def logout
