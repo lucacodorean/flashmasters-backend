@@ -1,4 +1,4 @@
-class AuthController < ApplicationController
+class Api::Auth::AuthController < ApplicationController
     def register
         if User.find_by(email: params['email']) != nil
             render json: { message: "Account already exists." }, status: :unauthorized
@@ -11,9 +11,10 @@ class AuthController < ApplicationController
           password_confirmation: params['password_confirmation'],
           name:                  params['name']
         )
+
         if user
             session[:user_id] = user.id
-            render json: UserResource.new(User.find(session[:user_id])).as_json, status: 200
+            render json: Api::V1::UserResource.new(User.find(session[:user_id])).as_json, status: 200
             return
         end
 
@@ -30,11 +31,11 @@ class AuthController < ApplicationController
 
         user.authenticate(params[:password])
         session[:user_id] = user.id
-        render json: UserResource.new(user).as_json, status: 200
+        render json: Api::V1::UserResource.new(user).as_json, status: 200
     end
 
     def logout
-        if(session[:user_id] == nil)
+        if session[:user_id] == nil
             render json: {message: "No user logged-in."}, status: 403
             return
         end

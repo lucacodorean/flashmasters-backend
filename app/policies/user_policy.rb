@@ -1,10 +1,11 @@
 class UserPolicy < ApplicationPolicy
+
     def index?
-        user.present? && user.admin?
+        user.is_admin
     end
 
     def show?
-        true
+        user.present?
     end
 
     def create?

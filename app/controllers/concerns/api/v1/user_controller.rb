@@ -1,22 +1,24 @@
-class UserController < ApplicationController
+class Api::V1::UserController < ApplicationController
 
     before_action :set_user, only: [:show, :update]
-    after_action  :verify_authorized, except: [:index]
+    after_action  :verify_authorized
 
     def index
-        users = User.all
-        render json: users.map { |user| UserResource.new(user).as_json }, status: 200
+        users =  User.all
+        authorize users
+
+        render json: users.map { |user| Api::V1::UserResource.new(user).as_json }, status: 200
     end
 
     def show
         authorize @user
-        render json: UserResource.new(@user).as_json, status: 200
+        render json: Api::V1::UserResource.new(@user).as_json, status: 200
     end
 
     def update
         authorize @user
         if @user.update(user_params)
-            render json: UserResource.new(@user).as_json, status: 201
+            render json: Api::V1::UserResource.new(@user).as_json, status: 201
             return
         end
 

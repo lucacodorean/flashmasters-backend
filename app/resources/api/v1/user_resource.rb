@@ -1,4 +1,4 @@
-class UserResource
+class Api::V1::UserResource
     include Rails.application.routes.url_helpers
 
     def initialize(user)
@@ -17,8 +17,8 @@ class UserResource
             },
             relationships: {},
             links: {
-                parent: users_index_url(host: ENV["APP_DOMAIN"], port: ENV["APP_PORT"]),
-                self:   user_show_url(@user.key, host: ENV["APP_DOMAIN"], port: ENV["APP_PORT"]),
+                parent: ENV["API_URL"] + "/users",
+                self:   ENV["API_URL"] + "/users/#{@user.key}",
             }
         }.as_json(options)
     end
