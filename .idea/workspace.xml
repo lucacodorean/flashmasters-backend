@@ -7,22 +7,41 @@
     <list default="true" id="8fa52410-5602-465f-835e-db26812f3e14" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/auth_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/auth/auth_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/.keep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/auth_controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/session_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/v1/session_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/user_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/v1/user_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/auth/auth_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/auth/auth_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/v1/session_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/v1/session_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/v1/user_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/v1/user_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/static_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/static_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/application_record_api.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/application_record_api.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/concerns/has_key.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/concerns/has_key.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/concerns/soft_deletable.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/concerns/soft_deletable.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/role.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/role.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/policies/application_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/application_policy.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/policies/user_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/user_policy.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/user_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/api/v1/user_resource.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/cors.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/cors.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/api/v1/user_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/api/v1/user_resource.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environment.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/initializers/session_store.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/session_store.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20241016060050_create_roles.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20241016060050_create_roles.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20241017203516_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20241017203516_create_users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20241018184309_add_admin_to_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20241018184309_add_admin_to_users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/static_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/static_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/user_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/user_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/roles.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/roles.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/users.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/users.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/role_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/role_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/user_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/user_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/policies/user_policy_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/policies/user_policy_test.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,6 +58,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.laravel-idea.search-composer-json&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -63,8 +84,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.19072.14" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.19072.14" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-PS-243.21565.202" />
+        <option value="bundled-php-predefined-a98d8de5180a-5fbe0c30323e-com.jetbrains.php.sharedIndexes-PS-243.21565.202" />
       </set>
     </attachedChunks>
   </component>
@@ -83,6 +104,9 @@
       <workItem from="1729286132681" duration="244000" />
       <workItem from="1729577744943" duration="6775000" />
       <workItem from="1729586745060" duration="996000" />
+      <workItem from="1733246363968" duration="1872000" />
+      <workItem from="1733252688100" duration="3135000" />
+      <workItem from="1733256388835" duration="3003000" />
     </task>
     <servers />
   </component>

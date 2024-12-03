@@ -1,7 +1,7 @@
 class UserPolicy < ApplicationPolicy
 
     def index?
-        user.is_admin
+        !user.nil? && user.is_admin?
     end
 
     def show?

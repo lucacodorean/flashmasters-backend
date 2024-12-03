@@ -5,6 +5,11 @@ class Api::Auth::AuthController < ApplicationController
             return
         end
 
+        if params['password'] != params['password_confirmation']
+              render json: { message: 'Passwords do not match.' }, status: :unprocessable_entity
+              return
+        end
+
         user = User.create!(
           email:                 params['email'],
           password:              params['password'],
@@ -36,7 +41,7 @@ class Api::Auth::AuthController < ApplicationController
 
     def logout
         if session[:user_id] == nil
-            render json: {message: "No user logged-in."}, status: 403
+            render json: {message: "No user logged-in."}, status: :unprocessable_entity
             return
         end
 

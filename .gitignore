@@ -1,8 +1,6 @@
 .env
 .idea
-.idea/codeStyles
-.idea/inspectionProfiles
-.idea/workspace.xml
 config/database.yml
 tmp
 log
+LICENSE
