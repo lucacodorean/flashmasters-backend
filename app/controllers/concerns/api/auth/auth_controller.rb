@@ -14,16 +14,17 @@ class Api::Auth::AuthController < ApplicationController
           email:                 params['email'],
           password:              params['password'],
           password_confirmation: params['password_confirmation'],
-          name:                  params['name']
+          name:                  params['name'],
+          role:                  Role.where(key: params["role_id"]).first
         )
 
         if user
             session[:user_id] = user.id
-            render json: Api::V1::UserResource.new(User.find(session[:user_id])).as_json, status: 200
+            render json: Api::V1::UserResource.new(User.find(session[:user_id])).as_json, status: 201
             return
         end
 
-        render json: { message: "Can't register the user." }, status: 500
+        render json: { message: "Can't register the user." }, status: 422
     end
 
     def login
