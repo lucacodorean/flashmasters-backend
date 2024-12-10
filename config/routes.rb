@@ -13,6 +13,8 @@ Rails.application.routes.draw do
         namespace :v1 do
             resources :users, only: [:create]
             resources :roles, only: [:create]
+            resources :cards, only: [:create]
+
 
             get     'users',        to: 'user#index',       as: "users_index"
             get     'users/:key',   to: 'user#show',        as: "user_show"
@@ -24,6 +26,12 @@ Rails.application.routes.draw do
             put     'roles/',       to: 'role#create',      as: "roles_create"
             patch   'roles/:key',   to: 'role#update',      as: "roles_update"
             delete  'roles/:key',   to: 'role#destroy',     as: "roles_destroy"
+
+            get     'cards',        to: 'card#index',       as: "card_index"
+            get     'cards/:key',   to: 'card#show',        as: "card_show"
+            put     'cards/',       to: 'card#create',      as: "card_create"
+            patch   'cards/:key',   to: 'card#update',      as: "card_update"
+            delete  'cards/:key',   to: 'card#destroy',     as: "card_destroy"
         end
     end
 end
