@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :question_resources
     get "up" => "rails/health#show", as: :rails_health_check
 
     root "static#home"
@@ -27,11 +28,17 @@ Rails.application.routes.draw do
             patch   'roles/:key',   to: 'role#update',      as: "roles_update"
             delete  'roles/:key',   to: 'role#destroy',     as: "roles_destroy"
 
-            get     'cards',        to: 'card#index',       as: "card_index"
-            get     'cards/:key',   to: 'card#show',        as: "card_show"
-            put     'cards/',       to: 'card#create',      as: "card_create"
-            patch   'cards/:key',   to: 'card#update',      as: "card_update"
-            delete  'cards/:key',   to: 'card#destroy',     as: "card_destroy"
+            get     'cards',        to: 'card#index',       as: "cards_index"
+            get     'cards/:key',   to: 'card#show',        as: "cards_show"
+            put     'cards/',       to: 'card#create',      as: "cards_create"
+            patch   'cards/:key',   to: 'card#update',      as: "cards_update"
+            delete  'cards/:key',   to: 'card#destroy',     as: "cards_destroy"
+
+            get     'questions',        to: 'question#index',       as: "questions_index"
+            get     'questions/:key',   to: 'question#show',        as: "questions_show"
+            put     'questions/',       to: 'question#create',      as: "questions_create"
+            patch   'questions/:key',   to: 'question#update',      as: "questions_update"
+            delete  'questions/:key',   to: 'question#destroy',     as: "questions_destroy"
         end
     end
 end
