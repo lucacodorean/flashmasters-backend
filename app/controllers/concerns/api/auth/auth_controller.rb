@@ -19,6 +19,9 @@ class Api::Auth::AuthController < ApplicationController
         )
 
         if user
+            stripe_client = Stripe::Customer.create(name: user.name, email: user.email)
+            user.update(customer_id: stripe_client.id)
+
             session[:user_id] = user.id
             render json: Api::V1::UserResource.new(User.find(session[:user_id])).as_json, status: 201
             return

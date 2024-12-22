@@ -4,6 +4,9 @@ Rails.application.routes.draw do
 
     root "static#home"
     resources :session, only: [:create]
+
+    post    'stripe/webhook',     to: 'webhook#create',   as: "stripe_webhook"
+
     namespace :api do
         namespace :auth do
             post    'register',     to: 'auth#register',    as: "auth_register"
