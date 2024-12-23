@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_12_22_160517) do
+ActiveRecord::Schema[7.1].define(version: 2024_12_23_104531) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -40,6 +40,35 @@ ActiveRecord::Schema[7.1].define(version: 2024_12_22_160517) do
     t.bigint "blob_id", null: false
     t.string "variation_digest", null: false
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
+  end
+
+  create_table "bundles", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.string "key"
+    t.integer "price"
+    t.string "price_id"
+    t.string "product_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "bundles_questions", force: :cascade do |t|
+    t.bigint "bundle_id"
+    t.bigint "question_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["bundle_id"], name: "index_bundles_questions_on_bundle_id"
+    t.index ["question_id"], name: "index_bundles_questions_on_question_id"
+  end
+
+  create_table "bundles_users", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "bundle_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["bundle_id"], name: "index_bundles_users_on_bundle_id"
+    t.index ["user_id"], name: "index_bundles_users_on_user_id"
   end
 
   create_table "cards", force: :cascade do |t|
@@ -87,6 +116,10 @@ ActiveRecord::Schema[7.1].define(version: 2024_12_22_160517) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "bundles_questions", "bundles"
+  add_foreign_key "bundles_questions", "questions"
+  add_foreign_key "bundles_users", "bundles"
+  add_foreign_key "bundles_users", "users"
   add_foreign_key "cards_questions", "cards"
   add_foreign_key "cards_questions", "questions"
   add_foreign_key "users", "roles"

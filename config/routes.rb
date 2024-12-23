@@ -42,6 +42,12 @@ Rails.application.routes.draw do
             put     'questions/',       to: 'question#create',      as: "questions_create"
             patch   'questions/:key',   to: 'question#update',      as: "questions_update"
             delete  'questions/:key',   to: 'question#destroy',     as: "questions_destroy"
+
+            get     'bundles',          to: 'bundle#index',       as: "bundles_index"
+            get     'bundles/:key',     to: 'bundle#show',        as: "bundles_show"
+            put     'bundles/',         to: 'bundle#create',      as: "bundles_create"
+            patch   'bundles/:key',     to: 'bundle#update',      as: "bundles_update"
+            delete  'bundles/:key',     to: 'bundle#destroy',     as: "bundles_destroy"
         end
     end
 end

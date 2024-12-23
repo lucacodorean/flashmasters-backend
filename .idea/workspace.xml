@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fa52410-5602-465f-835e-db26812f3e14" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/webhook_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/stripe.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/concerns/api/v1/bundle_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/policies/bundle_policy.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/resources/api/v1/bundle_resource.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/auth/auth_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/auth/auth_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/question.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/question.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/policies/question_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/question_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/api/resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/api/resource.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/resources/api/v1/user_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/api/v1/user_resource.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
@@ -123,7 +127,8 @@
       <workItem from="1734602765866" duration="1472000" />
       <workItem from="1734606649367" duration="11325000" />
       <workItem from="1734880411854" duration="700000" />
-      <workItem from="1734881417088" duration="3986000" />
+      <workItem from="1734881417088" duration="5980000" />
+      <workItem from="1734949322327" duration="8550000" />
     </task>
     <servers />
   </component>

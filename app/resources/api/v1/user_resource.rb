@@ -27,6 +27,10 @@ class Api::V1::UserResource < Api::Resource
             response[:relationships][:role] = Api::V1::RoleResource.new(@user.role).as_json
         end
 
+        if include?(:bundles, options)
+          response[:relationships][:bundles] = @user.bundles.map { |bundle| Api::V1::BundleResource.new(bundle).as_json }
+        end
+
         return response.as_json(options)
     end
 

@@ -1,4 +1,4 @@
-class CardPolicy < ApplicationPolicy
+class QuestionPolicy < ApplicationPolicy
 
   def index?
     user.is_admin? || user.is_maintainer?
