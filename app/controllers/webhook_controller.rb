@@ -28,6 +28,14 @@ class WebhookController < ApplicationController
 
             if customer
               customer.bundles << bundle
+
+              Stripe::PaymentIntent.create({
+               amount: bundle.price,
+               currency: 'ron',
+               payment_method_types: ['card'],
+               description: 'Multumim pentru achizitie!',
+               receipt_email: customer.email,
+              })
             end
           end
 

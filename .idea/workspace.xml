@@ -6,18 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8fa52410-5602-465f-835e-db26812f3e14" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/v1/bundle_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/v1/bundle_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/v1/question_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/v1/question_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/v1/user_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/v1/user_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/webhook_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/webhook_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/policies/bundle_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/bundle_policy.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/api/v1/bundle_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/api/v1/bundle_resource.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/api/v1/card_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/api/v1/card_resource.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/api/v1/question_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/api/v1/question_resource.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/api/v1/role_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/api/v1/role_resource.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/api/v1/user_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/api/v1/user_resource.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +119,7 @@
       <workItem from="1734606649367" duration="11325000" />
       <workItem from="1734880411854" duration="700000" />
       <workItem from="1734881417088" duration="5980000" />
-      <workItem from="1734949322327" duration="21859000" />
+      <workItem from="1734949322327" duration="23045000" />
     </task>
     <servers />
   </component>
