@@ -46,7 +46,7 @@ class Api::V1::QuestionController < ApplicationController
         @question.save
       end
 
-      render json: Api::V1::QuestionResource.new(@question).as_json(include: "cards"), status: 200
+      render json: Api::V1::QuestionResource.new(@question).as_json(include: %w["cards bundles"]), status: 200
       return
     end
 

@@ -48,6 +48,7 @@ Rails.application.routes.draw do
             put     'bundles/',         to: 'bundle#create',      as: "bundles_create"
             patch   'bundles/:key',     to: 'bundle#update',      as: "bundles_update"
             delete  'bundles/:key',     to: 'bundle#destroy',     as: "bundles_destroy"
+            post    'bundles/:key/buy', to: 'bundle#buy',         as: "bundle_buy"
         end
     end
 end

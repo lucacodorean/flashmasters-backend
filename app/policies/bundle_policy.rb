@@ -6,7 +6,7 @@ class BundlePolicy < ApplicationPolicy
 
   # User has access to bundle? tbe
   def show?
-    true
+    user.has_access_to_bundle?(record)
   end
 
   def create?

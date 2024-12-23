@@ -15,6 +15,22 @@ class WebhookController < ApplicationController
         when 'customer.created'
           handle_customer_created(event['data']['object'])
 
+        when 'checkout.session.completed'
+          session = event['data']['object']
+
+          Rails.logger.info("EVENT DETAILS: #{event}, and #{event['data']['object']['client_reference_id']}")
+
+          bundle = Bundle.where(product_id: event['data']['object']['client_reference_id']).first
+          if bundle
+            Rails.logger.info("Bundle found based on reference id.")
+
+            customer = User.where(customer_id: event['data']['object']['customer']).first
+
+            if customer
+              customer.bundles << bundle
+            end
+          end
+
         else
           Rails.logger.info("Unhandled event type: #{event['type']}")
 

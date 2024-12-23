@@ -10,4 +10,8 @@ class User < ApplicationRecordApi
     def is_maintainer?
         role.id == 1
     end
+
+    def has_access_to_bundle? bundle
+        bundles.include?(bundle)
+    end
 end

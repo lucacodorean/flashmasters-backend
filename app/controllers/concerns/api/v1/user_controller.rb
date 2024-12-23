@@ -12,7 +12,7 @@ class Api::V1::UserController < ApplicationController
 
     def show
         authorize @user
-        render json: Api::V1::UserResource.new(@user).as_json(include: "role"), status: 200
+        render json: Api::V1::UserResource.new(@user).as_json(include: %w[role bundles"]), status: 200
     end
 
     def update

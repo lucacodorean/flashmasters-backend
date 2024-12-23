@@ -21,8 +21,8 @@ class Api::V1::BundleResource < Api::Resource
       relationships: {
       },
       links: {
-        parent: ENV["API_URL"] + "/bundles",
-        self: ENV["API_URL"] + "/bundles/#{@bundle.key}",
+        parent: ENV["API_URL"] + "/v1/bundles",
+        self: ENV["API_URL"] + "/v1/bundles/#{@bundle.key}",
       }
     }
 

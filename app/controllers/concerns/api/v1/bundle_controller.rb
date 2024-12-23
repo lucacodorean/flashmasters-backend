@@ -1,7 +1,7 @@
 class Api::V1::BundleController < ApplicationController
 
   before_action :set_bundle, only: [:show, :update, :destroy]
-  after_action  :verify_authorized
+  after_action :verify_authorized, except: [:buy]
 
   def index
     bundles = Bundle.all
@@ -11,7 +11,7 @@ class Api::V1::BundleController < ApplicationController
   end
 
   def show
-    authorize current_user
+    authorize @bundle
     render json: Api::V1::BundleResource.new(@bundle).as_json(include: %w[questions users]), status: 200
   end
 
@@ -80,7 +80,30 @@ class Api::V1::BundleController < ApplicationController
     render json: {message: "Can't perform the delete."}, status: 422
   end
 
+  def buy
+    if session[:user_id] == nil
+      render json: {message: "User not logged."}, status: 401
+      return
+    end
+
+    bundle = Bundle.where(key: params[:key]).first
+
+    checkout_data = Stripe::Checkout::Session.create(
+      customer: User.where(id: session[:user_id]).first.customer_id,
+      payment_method_types: ['card'],
+      line_items: [{price: bundle.price_id, quantity: 1}],
+      mode: 'payment',
+      success_url: "#{ENV["STORAGE_URL"]}/",
+      cancel_url: "#{ENV["STORAGE_URL"]}/",
+      client_reference_id: bundle.product_id,
+      billing_address_collection: 'required'
+    )
+
+    render json: { checkout_url: checkout_data.url }
+  end
+
   private
+
   def set_bundle
     @bundle = Bundle.find_by(key: params[:key])
   end

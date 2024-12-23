@@ -18,8 +18,8 @@ class Api::V1::UserResource < Api::Resource
               relationships: {
               },
               links: {
-                parent: ENV["API_URL"] + "/users",
-                self: ENV["API_URL"] + "/users/#{@user.key}",
+                parent: ENV["API_URL"] + "/v1/users",
+                self: ENV["API_URL"] + "/v1/users/#{@user.key}",
               }
         }
 

@@ -16,8 +16,8 @@ class Api::V1::RoleResource < Api::Resource
       },
       relationships: {},
       links: {
-        parent: ENV["API_URL"] + "/roles",
-        self:   ENV["API_URL"] + "/roles/#{@role.key}",
+        parent: ENV["API_URL"] + "/v1/roles",
+        self:   ENV["API_URL"] + "/v1/roles/#{@role.key}",
       }
     }
 

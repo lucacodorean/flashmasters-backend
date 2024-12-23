@@ -18,8 +18,8 @@ class Api::V1::CardResource < Api::Resource
         images: @card.images.map { |image| url_for(image) },
       },
       links: {
-        parent: ENV["API_URL"] + "/cards",
-        self:   ENV["API_URL"] + "/cards/#{@card.key}",
+        parent: ENV["API_URL"] + "/v1/cards",
+        self:   ENV["API_URL"] + "/v1/cards/#{@card.key}",
       }
     }
 

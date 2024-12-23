@@ -17,13 +17,17 @@ class Api::V1::QuestionResource < Api::Resource
       },
       relationships: {},
       links: {
-        parent: ENV["API_URL"] + "/questions",
-        self:   ENV["API_URL"] + "/questions/#{@question.key}",
+        parent: ENV["API_URL"] + "/v1/questions",
+        self:   ENV["API_URL"] + "/v1/questions/#{@question.key}",
       }
     }
 
     if include?(:cards, options)
       response[:relationships][:cards] = @question.cards.map {|card| Api::V1::CardResource.new(card).as_json() }
+    end
+
+    if include?(:bundles, options)
+      response[:relationships][:bundles] = @question.bundles.map {|bundle| Api::V1::BundleResource.new(bundle).as_json() }
     end
 
     return response.as_json(options)
