@@ -91,10 +91,11 @@ class Api::V1::BundleController < ApplicationController
     checkout_data = Stripe::Checkout::Session.create(
       customer: User.where(id: session[:user_id]).first.customer_id,
       payment_method_types: ['card'],
+      invoice_creation: {enabled: true},
       line_items: [{price: bundle.price_id, quantity: 1}],
       mode: 'payment',
       success_url: "#{ENV["STORAGE_URL"]}/",
-      cancel_url: "#{ENV["STORAGE_URL"]}/",
+      cancel_url:  "#{ENV["STORAGE_URL"]}/",
       client_reference_id: bundle.product_id,
       billing_address_collection: 'required'
     )
