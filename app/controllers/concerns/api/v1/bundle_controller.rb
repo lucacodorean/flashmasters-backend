@@ -5,14 +5,14 @@ class Api::V1::BundleController < ApplicationController
 
   def index
     bundles = Bundle.all
-    authorize current_user
+    authorize bundles
 
     render json: bundles.map { |bundle| Api::V1::BundleResource.new(bundle).as_json(include: params[:include]) }, status: 200
   end
 
   def show
     authorize @bundle
-    render json: Api::V1::BundleResource.new(@bundle).as_json(include: %w[questions users]), status: 200
+    render json: Api::V1::BundleResource.new(@bundle).as_json(include: ["questions", "users"]), status: 200
   end
 
   def create
@@ -42,7 +42,6 @@ class Api::V1::BundleController < ApplicationController
 
   def update
     authorize current_user
-
     bundle_data = bundle_params.except(:questions)
 
 
@@ -86,18 +85,25 @@ class Api::V1::BundleController < ApplicationController
       return
     end
 
+    customer = User.where(id: session[:user_id]).first
     bundle = Bundle.where(key: params[:key]).first
 
+    if customer.has_access_to_bundle?(bundle)
+        render json: {message: "Customer already owns this bundle."}, status: 401
+        return
+    end
+
     checkout_data = Stripe::Checkout::Session.create(
-      customer: User.where(id: session[:user_id]).first.customer_id,
+      customer: customer.customer_id,
       payment_method_types: ['card'],
       invoice_creation: {enabled: true},
       line_items: [{price: bundle.price_id, quantity: 1}],
       mode: 'payment',
-      success_url: "#{ENV["STORAGE_URL"]}/",
-      cancel_url:  "#{ENV["STORAGE_URL"]}/",
+      success_url: "#{ENV["FRONT_END_URL"]}/dashboard",
+      cancel_url:  "#{ENV["FRONT_END_URL"]}/error",
       client_reference_id: bundle.product_id,
-      billing_address_collection: 'required'
+      billing_address_collection: 'required',
+      allow_promotion_codes: true,
     )
 
     render json: { checkout_url: checkout_data.url }
@@ -110,6 +116,6 @@ class Api::V1::BundleController < ApplicationController
   end
 
   def bundle_params
-    params.permit(:name, :description, :price, questions: [])
+    params.permit(:name, :description, :icon, :price, questions: [])
   end
 end

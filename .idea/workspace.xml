@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fa52410-5602-465f-835e-db26812f3e14" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/auth/auth_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/auth/auth_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/v1/bundle_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/v1/bundle_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/v1/card_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/v1/card_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/v1/user_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/v1/user_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/policies/bundle_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/bundle_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/api/v1/bundle_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/api/v1/bundle_resource.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/api/v1/card_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/api/v1/card_resource.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/api/v1/user_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/api/v1/user_resource.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/cors.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/cors.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +43,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Docker.Dockerfile build.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.web: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.laravel-idea.search-composer-json&quot;: &quot;true&quot;,
@@ -57,7 +71,7 @@
       <recent name="\\wsl.localhost\Ubuntu\root\flashmaster-backend\app\controllers\concerns\api\auth" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="Dockerfile build" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="docker-default">
       <deployment type="dockerfile">
         <settings>
@@ -68,14 +82,43 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
       <deployment type="dockerfile">
         <settings />
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="docker-default">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.web: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="docker-default">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="web" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.web: Compose Deployment" />
         <item itemvalue="Docker.Dockerfile build" />
       </list>
     </recent_temporary>
@@ -119,7 +162,13 @@
       <workItem from="1734606649367" duration="11325000" />
       <workItem from="1734880411854" duration="700000" />
       <workItem from="1734881417088" duration="5980000" />
-      <workItem from="1734949322327" duration="24316000" />
+      <workItem from="1734949322327" duration="26918000" />
+      <workItem from="1734989603143" duration="856000" />
+      <workItem from="1734990493607" duration="1000" />
+      <workItem from="1735035835864" duration="12902000" />
+      <workItem from="1735114829537" duration="9523000" />
+      <workItem from="1735206442798" duration="4212000" />
+      <workItem from="1735248373692" duration="1230000" />
     </task>
     <servers />
   </component>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_12_23_104531) do
+ActiveRecord::Schema[7.1].define(version: 2024_12_26_104710) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -51,6 +51,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_12_23_104531) do
     t.string "product_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "icon"
+    t.integer "hours"
   end
 
   create_table "bundles_questions", force: :cascade do |t|
@@ -111,6 +113,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_12_23_104531) do
     t.boolean "admin"
     t.bigint "role_id", null: false
     t.string "customer_id"
+    t.string "description"
+    t.string "icon"
     t.index ["role_id"], name: "index_users_on_role_id"
   end
 

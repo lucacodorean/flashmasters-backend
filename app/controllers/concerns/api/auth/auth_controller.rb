@@ -38,9 +38,13 @@ class Api::Auth::AuthController < ApplicationController
             return
         end
 
-        user.authenticate(params[:password])
+        if !user.authenticate(params[:password])
+            render json: { message: "Wrong credentials."}, status: :unauthorized
+            return
+        end
+
         session[:user_id] = user.id
-        render json: Api::V1::UserResource.new(user).as_json, status: 200
+        render json: Api::V1::UserResource.new(user).as_json(include: ["role", "bundles"]), status: 200
     end
 
     def logout
@@ -51,5 +55,9 @@ class Api::Auth::AuthController < ApplicationController
 
         session.delete(:user_id)
         render json: {message: "User has been logged-out."}, status: 200
+    end
+
+    def logged
+        render json: {logged: session[:user_id] != nil ? true : false}, status: session[:user_id] != nil ? 200 : 401
     end
 end

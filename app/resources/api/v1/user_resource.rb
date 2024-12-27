@@ -11,6 +11,7 @@ class Api::V1::UserResource < Api::Resource
               attributes: {
                 name: @user.name,
                 email: @user.email,
+                description: @user.description,
                 customer_id: @user.customer_id,
                 created_at:  @user.created_at,
                 updated_at:  @user.updated_at,

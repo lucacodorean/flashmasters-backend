@@ -12,7 +12,7 @@ class Api::V1::CardController < ApplicationController
 
   def show
     authorize current_user
-    render json: Api::V1::CardResource.new(@card).as_json, status: 200
+    render json: Api::V1::CardResource.new(@card).as_json(include: "questions"), status: 200
   end
 
   def create

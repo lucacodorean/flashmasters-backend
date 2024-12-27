@@ -2,16 +2,19 @@ Rails.application.routes.draw do
   resources :question_resources
     get "up" => "rails/health#show", as: :rails_health_check
 
-    root "static#home"
+  root "static#home"
     resources :session, only: [:create]
 
     post    'stripe/webhook',     to: 'webhook#create',   as: "stripe_webhook"
+
+    get '/api/test_csrf', to: 'application#test_csrf'
 
     namespace :api do
         namespace :auth do
             post    'register',     to: 'auth#register',    as: "auth_register"
             post    'login',        to: 'auth#login',       as: "auth_login"
             post    'logout',       to: 'auth#logout',      as: "auth_logout"
+            get     'logged',       to: 'auth#logged',      as: "auth_logged"
         end
 
         namespace :v1 do
@@ -24,6 +27,7 @@ Rails.application.routes.draw do
             get     'users/:key',   to: 'user#show',        as: "user_show"
             patch   'users/:key',   to: 'user#update',      as: "user_update"
             delete  'users/:key',   to: 'user#destroy',     as: "user_destroy"
+            get     'users/:key/billing',   to: 'user#billing_portal',     as: "user_billing_portal"
 
             get     'roles',        to: 'role#index',       as: "roles_index"
             get     'roles/:key',   to: 'role#show',        as: "roles_show"

@@ -14,6 +14,8 @@ class Api::V1::BundleResource < Api::Resource
         description: @bundle.description,
         price:      (@bundle.price / 100),
         price_id:    @bundle.price_id,
+        icon:        @bundle.icon,
+        hours:       @bundle.hours,
         product_id:  @bundle.product_id,
         created_at:  @bundle.created_at,
         updated_at:  @bundle.updated_at,

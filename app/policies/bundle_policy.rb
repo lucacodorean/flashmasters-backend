@@ -6,9 +6,9 @@ class BundlePolicy < ApplicationPolicy
 
   # User has access to bundle? tbe
   def show?
-    user.has_access_to_bundle?(record)
+    true
   end
-
+  #
   def create?
     user.is_admin? || user.is_maintainer?
   end
