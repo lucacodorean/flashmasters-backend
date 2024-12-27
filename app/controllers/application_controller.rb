@@ -4,6 +4,7 @@ class ApplicationController < ActionController::API
     include Pundit::Authorization
 
     protect_from_forgery with: :exception, unless: -> { request.format.json? } # poate trb comentat unless
+     skip_before_action :verify_authenticity_token, if: -> { request.path.start_with?('/auth') }
     rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
     before_action :set_csrf_cookie
     before_action :set_csrf_token_header
@@ -26,14 +27,18 @@ class ApplicationController < ActionController::API
         end
 
         def set_csrf_cookie
-            token = form_authenticity_token
-            Rails.logger.info "Generated CSRF Token: #{token}"
-            cookies['CSRF-TOKEN'] = token if protect_against_forgery?
+            unless request.path.start_with?('/api/auth')
+                token = form_authenticity_token
+                Rails.logger.info "Generated CSRF Token: #{token}"
+                cookies['CSRF-TOKEN'] = token if protect_against_forgery?
+            end
         end
 
         def set_csrf_token_header
-            token = form_authenticity_token
-            Rails.logger.info "Setting CSRF Token in Header: #{token}"
-            response.set_header('X-CSRF-Token', token) if protect_against_forgery?
+            unless request.path.start_with?('/api/auth')
+                token = form_authenticity_token
+                Rails.logger.info "Setting CSRF Token in Header: #{token}"
+                response.set_header('X-CSRF-Token', token) if protect_against_forgery?
+            end
         end
 end

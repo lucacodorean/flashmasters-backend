@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_12_26_104710) do
+ActiveRecord::Schema[7.1].define(version: 2024_12_27_122045) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -115,6 +115,9 @@ ActiveRecord::Schema[7.1].define(version: 2024_12_26_104710) do
     t.string "customer_id"
     t.string "description"
     t.string "icon"
+    t.string "uid"
+    t.string "provider"
+    t.string "avatar"
     t.index ["role_id"], name: "index_users_on_role_id"
   end
 

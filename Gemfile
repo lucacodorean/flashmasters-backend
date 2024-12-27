@@ -51,3 +51,6 @@ group :development do
   # gem "spring"
 end
 
+gem "omniauth", "~> 2.1"
+gem 'omniauth-google-oauth2'
+gem 'omniauth-rails_csrf_protection', '~> 1.0'

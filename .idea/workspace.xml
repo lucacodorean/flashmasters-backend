@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fa52410-5602-465f-835e-db26812f3e14" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/controllers/oauth_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/initializers/omniauth.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/auth/auth_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/auth/auth_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/v1/bundle_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/v1/bundle_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/v1/card_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/v1/card_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/v1/user_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/v1/user_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/policies/bundle_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/bundle_policy.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/api/v1/bundle_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/api/v1/bundle_resource.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/api/v1/card_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/api/v1/card_resource.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/resources/api/v1/user_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/api/v1/user_resource.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/cors.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/cors.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
@@ -65,13 +61,13 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="\\wsl.localhost\Ubuntu\home\luca\flashmasters-backend\app\controllers" />
+      <recent name="\\wsl.localhost\Ubuntu\home\luca\flashmasters-backend\app\controllers\concerns" />
+      <recent name="\\wsl.localhost\Ubuntu\home\luca\flashmasters-backend\app\controllers\concerns\api\auth" />
+      <recent name="\\wsl.localhost\Ubuntu\home\luca\flashmasters-backend\app\controllers\concerns\api\auth\oauth" />
       <recent name="\\wsl.localhost\Ubuntu\home\luca\flashmasters-backend\app\resources\api\v1" />
-      <recent name="\\wsl.localhost\Ubuntu\home\luca\flashmasters-backend\app\controllers\concerns\api\v1" />
-      <recent name="\\wsl.localhost\Ubuntu\root\flashmaster-backend\app\resources\api" />
-      <recent name="\\wsl.localhost\Ubuntu\root\flashmaster-backend\app\controllers\concerns\api\auth" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Docker.Dockerfile build">
     <configuration name="Dockerfile build" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="docker-default">
       <deployment type="dockerfile">
         <settings>
@@ -117,16 +113,17 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Dockerfile build" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.web: Compose Deployment" />
-        <item itemvalue="Docker.Dockerfile build" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-RM-243.22562.213" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PS-243.22562.233" />
+        <option value="bundled-php-predefined-a98d8de5180a-7980c7aaca61-com.jetbrains.php.sharedIndexes-PS-243.22562.233" />
       </set>
     </attachedChunks>
   </component>
@@ -168,7 +165,9 @@
       <workItem from="1735035835864" duration="12902000" />
       <workItem from="1735114829537" duration="9523000" />
       <workItem from="1735206442798" duration="4212000" />
-      <workItem from="1735248373692" duration="1230000" />
+      <workItem from="1735248373692" duration="1846000" />
+      <workItem from="1735298564337" duration="10896000" />
+      <workItem from="1735319083494" duration="6429000" />
     </task>
     <servers />
   </component>

@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     post    'stripe/webhook',     to: 'webhook#create',   as: "stripe_webhook"
 
     get '/api/test_csrf', to: 'application#test_csrf'
+    get "auth/google_oauth2/callback", to: "oauth#callback", as: "oauth_callback"
 
     namespace :api do
         namespace :auth do
@@ -15,6 +16,8 @@ Rails.application.routes.draw do
             post    'login',        to: 'auth#login',       as: "auth_login"
             post    'logout',       to: 'auth#logout',      as: "auth_logout"
             get     'logged',       to: 'auth#logged',      as: "auth_logged"
+
+            get "google_oauth2/redirect", to: 'google#redirect', as: "google_redirect"
         end
 
         namespace :v1 do
