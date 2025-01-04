@@ -5,6 +5,9 @@ class Api::V1::BundleController < ApplicationController
 
   def index
     bundles = Bundle.all
+    if params[:name]
+      bundles = Bundle.where("LOWER(name) LIKE ?", "%#{params[:name].downcase}%")
+    end
     authorize bundles
 
     render json: bundles.map { |bundle| Api::V1::BundleResource.new(bundle).as_json(include: params[:include]) }, status: 200

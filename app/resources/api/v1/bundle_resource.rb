@@ -36,7 +36,7 @@ class Api::V1::BundleResource < Api::Resource
       response[:relationships][:questions] = @bundle.questions.map { |question| Api::V1::QuestionResource.new(question).as_json }
     end
 
-    return response.as_json(options)
+    response.as_json(options)
   end
 
 end
