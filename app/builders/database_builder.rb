@@ -4,34 +4,35 @@ class DatabaseBuilder
       RoleBuilder.build_role(role_name)
     end
 
-    UserBuilder.build_user("Admin", "flashMasters Admin", "admin@flashmasters.com", "password")
+    UserBuilder.build_user("Admin", "flashMasters Admin", "admin@flashmasters.com", "password", true)
+    UserBuilder.build_user("Student", "flashMasters Student", "student@flashmasters.com", "password", false)
 
     questions = [
       QuestionBuilder.build_question(
         "PHP este un limbaj de programare dedicat domeniului:",
         3,
-        [
-          { id: 0, text: "game development" },
-          { id: 1, text: "AI" },
-          { id: 2, text: "data processing" },
-          { id: 3, text: "web development" },
-          { id: 4, text: "inginerie" }
-        ].to_json,
-        [CardBuilder.build_card(text: "PHP este un limbaj de programare general-purpose, dedicat in mare parte, domeniului web.")]
+        {
+          "1"  => "game development",
+          "2"  =>  "AI",
+          "3"  =>  "data processing",
+          "4"  =>  "web development",
+          "5"  =>  "inginerie"
+        },
+        [CardBuilder.build_card("PHP este un limbaj de programare general-purpose, dedicat in mare parte, domeniului web.")]
       ),
       QuestionBuilder.build_question(
         "Laravel este un framework pentru limbajul de programare:",
         2,
+        {
+          "1"  => "Python",
+          "2"  =>  "Javascript",
+          "3"  =>  "PHP",
+          "4"  =>  "Ruby",
+          "5"  =>  "Rust"
+        },
         [
-          { id: 0, text: "Python" },
-          { id: 1, text: "Javascript" },
-          { id: 2, text: "PHP" },
-          { id: 3, text: "Ruby" },
-          { id: 4, text: "Rust" }
-        ].to_json,
-        [
-          CardBuilder.build_card(text: "Laravel, este unul dintre cele mai folosite framework-uri ale PHP-ului"),
-          CardBuilder.build_card(text: "https://laracasts.com/ este o platformă ce permite învățarea framework-ului Laravel foarte facil")
+          CardBuilder.build_card("Laravel, este unul dintre cele mai folosite framework-uri ale PHP-ului"),
+          CardBuilder.build_card("https://laracasts.com/ este o platformă ce permite învățarea framework-ului Laravel foarte facil")
         ]
       )
     ]
